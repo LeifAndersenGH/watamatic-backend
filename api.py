@@ -1,6 +1,7 @@
-from distutils.log import debug
+import os
 from core import api
 
 
 if (__name__ == '__main__'):
-    api.run(debug=True, port=33507)
+    PORT=os.enviorn.get('PORT')
+    api.run(debug=True, port=PORT, host='0.0.0.0')
