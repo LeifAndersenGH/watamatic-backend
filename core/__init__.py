@@ -65,24 +65,24 @@ from core import views
 ## Time based event -> periodic event
 
 
-from apscheduler.schedulers.background import BackgroundScheduler
+# from apscheduler.schedulers.background import BackgroundScheduler
 
 
-from core.periodic_events import fetch_live_data
+# from core.periodic_events import fetch_live_data
 
 
-# Schedule a job to be executed every minute.
-# The job is to grab live plant api data and save it to the database. 
-scheduler = BackgroundScheduler()
+# # Schedule a job to be executed every minute.
+# # The job is to grab live plant api data and save it to the database. 
+# scheduler = BackgroundScheduler()
 
 
-# job = scheduler.add_job(fetch_data, 'interval', minutes=1)
-job = scheduler.add_job(fetch_live_data, 'interval', minutes=1)
+# # job = scheduler.add_job(fetch_data, 'interval', minutes=1)
+# job = scheduler.add_job(fetch_live_data, 'interval', minutes=1)
 
 
 
-# Start the scheduler
-scheduler.start()
+# # Start the scheduler
+# scheduler.start()
 
 
 
